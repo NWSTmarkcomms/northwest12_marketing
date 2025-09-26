@@ -74,6 +74,78 @@
 
   <main class="product-grid">
 
+  <div class="product-card">
+      <h2 class="product-title">All Services Leave Behind (4x9")</h2>
+
+        <div class="row-layout">
+<div class="flyer-expand-toggle">
+  <input class="expand-checkbox" hidden id="expand-all-services-leave-behind" type="checkbox" />
+
+  <!-- 👇 This label controls the expand toggle -->
+  <label class="flyer-thumb-container" for="expand-all-services-leave-behind">
+    <img
+      alt="All Services Leave Behind"
+      class="flyer-thumb top-left"
+      src="images/BHPC-allservices-lb-120.png"
+    />
+
+    <!-- 👇 This text is part of the same label, so it's clickable too -->
+    <p style="text-align: center; font-size: 0.9rem; color: #444;">
+      Click Here to Zoom
+    </p>
+  </label>
+
+   <div class="product-details">
+      <form 
+  action="https://hooks.zapier.com/hooks/catch/12716030/um5ycwt/" 
+  method="POST" 
+  target="hiddenFrame" 
+  onsubmit="handleFormSubmit(event)" 
+>
+
+
+            <input type="text" name="fullName" placeholder="Manager Name" required />
+            <input type="email" name="email" placeholder="Manager Email" required />
+            <select name="Quantity" required>
+              <option value="" disabled selected>Select Quantity</option>
+              <option value="100">100</option>
+              <option value="250">250</option>
+              <option value="500">500</option>
+              <option value="1000">1000</option>
+            </select>
+            <select name="office" required>
+              <option value="" disabled selected>Select Office</option>
+        <option value="Bonita Springs -  NWST">Bonita Springs -  NWST</option> 
+        <option value="Broward -  NWST">Broward -  NWST</option> 
+        <option value="Doral -  NWST">Doral -  NWST</option> 
+        <option value="Fort Mayers -  NWST">Fort Myers -  NWST</option> 
+        <option value="Miami Gardens -  NWST">Miami Gardens -  NWST</option> 
+        <option value="Naples -  NWST">Naples -  NWST</option> 
+        <option value="Pompano Beach -  NWST">Pompano Beach -  NWST</option> 
+            </select>
+            <input type="hidden" name="product" value="All Services Leave Behind" />
+            <button type="submit" class="button">Request</button>
+          </form>
+        </div>
+
+          <p id="successMessage" style="display:none; color:green; margin-top:10px;">
+  🥳 Stay tuned for an email confirmation!
+</p>
+        </div>
+
+  <!-- This section shows the expanded view -->
+  <label class="flyer-expanded-view" for="expand-all-services-leave-behind">
+    <button aria-label="Close" class="flyer-close-button">×</button>
+    <img
+      alt="All Services Leave Behind"
+      class="flyer-expanded-img"
+      src="images/BHPC-allservices-lb-720.png"
+    />
+  </label>
+</div>
+      </div>
+    </div>
+
     <div class="product-card">
       <h2 class="product-title">All Services Leave Behind (4x9")</h2>
 
@@ -136,74 +208,6 @@
     />
   </label>
 </div>
-      </div>
-    </div>
-    
-    <div class="product-card">
-      <h2 class="product-title">CrawlSpace Leave Behind (4x9")</h2>
-      
-        <div class="row-layout">
-        <div class="flyer-expand-toggle">
-          <input type="checkbox" id="expand-crawlspace-leave-behind" class="expand-checkbox" hidden>
-  <!-- 👇 This label controls the expand toggle -->
-  <label class="flyer-thumb-container" for="expand-crawlspace-leave-behind">
-    <img
-      alt="Crawl Space Leave Behind"
-      class="flyer-thumb top-left"
-      src="images/BHPC-crawlspace-lb-120.png"
-    />
-
-    <!-- 👇 This text is part of the same label, so it's clickable too -->
-    <p style="text-align: center; font-size: 0.9rem; color: #444;">
-      Click Here to Zoom
-    </p>
-  </label>
-
-  <!-- This section shows the expanded view -->
-  <label class="flyer-expanded-view" for="expand-crawlspace-leave-behind">
-    <button aria-label="Close" class="flyer-close-button">×</button>
-    <img
-      alt="CrawlSpace Leave Behind"
-      class="flyer-expanded-img"
-      src="images/BHPC-crawlspace-lb-720.png"
-    />
-  </label>
-</div>
-          
-        <div class="product-details">
-      <form 
-        action="https://hooks.zapier.com/hooks/catch/12716030/uodfhsh/" 
-        method="POST" 
-        target="hiddenFrame"
-        onsubmit="setTimeout(() => { window.location.href = 'https://bughousesuccess.netlify.app/'; }, 1000);"
-      >
-            <input type="text" name="fullName" placeholder="Manager Name" required />
-            <input type="email" name="email" placeholder="Manager Email" required />
-            <select name="Quantity" required>
-              <option value="" disabled selected>Select Quantity</option>
-              <option value="100">100</option>
-              <option value="250">250</option>
-              <option value="500">500</option>
-              <option value="1000">1000</option>
-            </select>
-            <select name="office" required>
-              <option value="" disabled selected>Select Office</option>
-        <option value="Augusta - BHPC">Augusta - BHPC</option>
-        <option value="Carrollton - BHPC">Carrollton - BHPC</option>
-        <option value="Dublin - BHPC">Dublin - BHPC</option>
-        <option value="Eastman - BHPC">Eastman - BHPC</option>
-        <option value="Greensboro - BHPC">Greensboro - BHPC</option>
-        <option value="Macon - BHPC">Macon - BHPC</option>
-        <option value="Madison - BHPC">Madison - BHPC</option>
-        <option value="Milledgeville - BHPC">Milledgeville - BHPC</option>
-        <option value="St. Simons - BHPC">St. Simons - BHPC</option>
-        <option value="Warner Robins - BHPC">Warner Robins - BHPC</option>
-        <option value="Watkinsville - BHPC">Watkinsville - BHPC</option>
-            </select>
-            <input type="hidden" name="product" value="CrawlSpace Leave Behind" />
-            <button type="submit" class="button">Request</button>
-          </form>
-        </div>
       </div>
     </div>
     
@@ -1504,6 +1508,26 @@ document.addEventListener('DOMContentLoaded', () => {
       toggleFeature(e);
     });
   }
+
+      // ✅ Form handler for Zapier + success message + redirect
+  window.handleFormSubmit = function(e) {
+    e.preventDefault();
+    const form = e.target;
+
+    // Submit to Zapier webhook
+    form.submit();
+
+    // Show success message (scoped to this product card)
+    const msg = form.parentElement.querySelector('#successMessage');
+    if (msg) {
+      msg.style.display = 'block';
+    }
+
+    // Auto-redirect after short delay
+    setTimeout(() => {
+      window.location.href = 'success.html';
+    }, 2500);
+  );
 });
 </script>
 
